@@ -5,7 +5,7 @@ Summary:        Hello World example implemented in C
 
 License:        MIT
 URL:            https://github.com/qiaofeng1227/%{name}
-Source0:        https://github.com/qiaofeng1227/%{name}/Python-3.8.7.tar.xz
+Source0:        https://github.com/qiaofeng1227/%{name}/%{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  make
