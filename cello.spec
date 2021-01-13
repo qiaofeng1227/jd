@@ -7,28 +7,27 @@ License:        MIT
 URL:            https://github.com/qiaofeng1227/%{name}
 Source0:        https://github.com/qiaofeng1227/%{name}/%{name}-%{version}.tar.gz
 
-BuildRequires:  gcc
-BuildRequires:  make
-      
+BuildRequires:  gcc,make
+Requires: build-essential,libssl-dev,zlib1g-dev,libbz2-dev,libreadline-dev,libsqlite3-dev,wget,curl,llvm,libncurses5-dev,libncursesw5-dev,xz-utils,tk-dev,libffi-dev,liblzma-dev
 
 %description
 A simple RPM package to print Hello World
 
 %prep
-%setup -q 
+%setup -q
 
 %build
-make %{?_smp_mflags}
-
+./configure
+make
 
 %install
-%make_install
-
+make PREFIX=/usr DESTDIR=%{?buildroot} install
 
 %files
-%license LICENSE
-%{_bindir}/%{name}
+%defattr(-,root,root,-)
+%{_bindir}/my
 
+%changelog
 
 
 %changelog

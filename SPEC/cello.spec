@@ -13,22 +13,17 @@ BuildRequires:  make
 A simple RPM package to print Hello World
 
 %prep
-%setup -q 
+%setup -q
 
 %build
-make %{?_smp_mflags}
-
+./configure
+make
 
 %install
-%make_install
-
+make PREFIX=/usr DESTDIR=%{?buildroot} install
 
 %files
-%license LICENSE
-%{_bindir}/%{name}
-
-
+%defattr(-,root,root,-)
+%{_bindir}/my
 
 %changelog
-* Wed Mar 25 2020 naveen
-- first cello package
