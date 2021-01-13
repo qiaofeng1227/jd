@@ -5,7 +5,7 @@ Summary:        Hello World example implemented in C
 
 License:        MIT
 URL:            https://github.com/qiaofeng1227/%{name}
-Source0:        https://github.com/qiaofeng1227/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/qiaofeng1227/cello/blob/master/cello-1.0.2.tar.xz
 
 BuildRequires:  gcc
 BuildRequires:  make
