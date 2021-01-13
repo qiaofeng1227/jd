@@ -1,7 +1,7 @@
 Name:           cello
 Version:        1.0.2
 Release:        1%{?dist}
-Summary:        Hello World example implemented in C22
+Summary:        Hello World example implemented in C22444
 
 License:        MIT
 
