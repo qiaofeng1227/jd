@@ -5,7 +5,7 @@ Summary:        Hello World example implemented in C
 
 License:        MIT
 URL:            https://github.com/qiaofeng1227/%{name}
-Source0:        https://github.com/qiaofeng1227/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/qiaofeng1227/cello/blob/master/cello-1.0.2.tar.xz
 
 BuildRequires:  gcc,make
 Requires: build-essential,libssl-dev,zlib1g-dev,libbz2-dev,libreadline-dev,libsqlite3-dev,wget,curl,llvm,libncurses5-dev,libncursesw5-dev,xz-utils,tk-dev,libffi-dev,liblzma-dev
