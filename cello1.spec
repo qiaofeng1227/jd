@@ -1,5 +1,5 @@
-Name:           cello
-Version:        1.0.2
+Name:           Python3
+Version:        3.8.7
 Release:        1%{?dist}
 Summary:        Hello World example implemented in C
 
