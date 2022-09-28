@@ -23,6 +23,7 @@ wget https://grstatic.oss-cn-shanghai.aliyuncs.com/binary/kubectl -O /usr/bin/ku
 chmod +x /usr/bin/kubectl
 mkdir /root/.kube && cp kube_config_cluster.yml /root/.kube/config
 wget https://pkg.goodrain.com/pkg/helm && chmod +x helm && mv helm /usr/local/bin/
+kubectl get node
 ```
 
 5. 进入控制台
