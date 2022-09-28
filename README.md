@@ -1,11 +1,16 @@
 ## rainbond 平台安装应用实现自动化
 
 1. 操作系统升级内核
-centos系统
+ubuntu20.04内核足够新，centos系统需要[升级](https://t.goodrain.com/d/9-centos)
 
 2. 安装docker
 ```
 curl sh.rainbond.com/install_docker | bash
+```
+
+3. 安装
+```
+yum -y install nfs-utils
 ```
 
 3. 运行控制台
