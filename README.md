@@ -28,3 +28,4 @@ wget https://pkg.goodrain.com/pkg/helm && chmod +x helm && mv helm /usr/local/bi
 
 ![image](https://user-images.githubusercontent.com/43192516/192737221-ebb5f4e6-3dfc-4d8c-9540-ea74101c2ba4.png)
 
+![image](https://user-images.githubusercontent.com/43192516/192737515-dd643c77-1ebd-4ac7-a0ef-54161752c4a2.png)
