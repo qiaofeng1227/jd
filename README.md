@@ -10,7 +10,8 @@ curl sh.rainbond.com/install_docker | bash
 
 3. 安装
 ```
-yum -y install nfs-utils
+yum -y install nfs-utils    # Cenots系统
+apt-get install nfs-common  # ubuntu系统
 ```
 
 3. 运行控制台
