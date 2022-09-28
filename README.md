@@ -1,6 +1,6 @@
 ## rainbond 平台安装应用实现自动化
 
-1. 操作系统升级内核
+1. 操作系统升级内核  
 ubuntu20.04内核足够新，centos系统需要[升级](https://t.goodrain.com/d/9-centos)
 
 2. 安装docker
