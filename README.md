@@ -1,23 +1,30 @@
-# cello--test
+1. 操作系统升级内核
+centos系统
 
-C program to print **Hello World**
-
-## Manual Building
-
-Invoke the C compiler from the GNU Compiler Collection (GCC) to compile the source code into binary:
-
-```bash
-gcc -g -o cello cello.c
+2. 安装docker
+```
+curl sh.rainbond.com/install_docker | bash
 ```
 
-Execute the resulting output binary cello.
-
-```bash
-$ ./cello
-Hello World
+3. 运行控制台
+```
+docker run -d -p 7070:7070 --name=rainbond-allinone --restart=always -v ~/.ssh:/root/.ssh -v ~/rainbonddata:/app/data registry.cn-beijing.aliyuncs.com/quyc/rainbond-allinone:v1.1
 ```
 
-  
-Credits :
+4. 安装k8s
+上传rke文件到 /usr/bin/rke 
+上传cluster.yml文件到 /root/cluster.yml
+```
+chmod +x /usr/bin/rke 
+rke up
+wget https://grstatic.oss-cn-shanghai.aliyuncs.com/binary/kubectl -O /usr/bin/kubectl
+chmod +x /usr/bin/kubectl
+mkdir /root/.kube && cp kube_config_cluster.yml /root/.kube/config
+wget https://pkg.goodrain.com/pkg/helm && chmod +x helm && mv helm /usr/local/bin/
+```
 
-[RPM Packaging Guide](https://rpm-packaging-guide.github.io)
+5. 进入控制台
+![image](https://user-images.githubusercontent.com/43192516/192736943-031fac38-a633-4e6d-97a4-d4e2cc47c401.png)
+
+![image](https://user-images.githubusercontent.com/43192516/192737221-ebb5f4e6-3dfc-4d8c-9540-ea74101c2ba4.png)
+
