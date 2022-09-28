@@ -29,6 +29,6 @@ kubectl get node
 5. 进入控制台
 ![image](https://user-images.githubusercontent.com/43192516/192736943-031fac38-a633-4e6d-97a4-d4e2cc47c401.png)
 
-![image](https://user-images.githubusercontent.com/43192516/192737221-ebb5f4e6-3dfc-4d8c-9540-ea74101c2ba4.png)
+![image](https://user-images.githubusercontent.com/43192516/192741901-424eadc7-2a5f-4f5f-8926-ca09d41d515b.png)
 
 ![image](https://user-images.githubusercontent.com/43192516/192737515-dd643c77-1ebd-4ac7-a0ef-54161752c4a2.png)
