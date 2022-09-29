@@ -20,6 +20,13 @@ docker run -d -p 7070:7070 --name=rainbond-allinone --restart=always -v ~/.ssh:/
 ```
 
 4. 安装k8s
+准备：
+```
+1. ssh-keygen
+2. cat ~/.ssh/id_rsa.pub
+3. wget http://sh.rainbond.com/init_node && chmod +x init_node
+4. export SSH_RSA="步骤2内容" && ./init_node
+```
 上传rke文件到 /usr/bin/rke 
 上传cluster.yml文件到 /root/cluster.yml
 ```
@@ -38,3 +45,16 @@ kubectl get node
 ![image](https://user-images.githubusercontent.com/43192516/192741901-424eadc7-2a5f-4f5f-8926-ca09d41d515b.png)
 
 ![image](https://user-images.githubusercontent.com/43192516/192737515-dd643c77-1ebd-4ac7-a0ef-54161752c4a2.png)
+
+
+6. 手动创建tomcat应用，开放外部端口并挂载路径/usr/local/tomcat
+7. 记录token和集群ID
+![image](https://user-images.githubusercontent.com/43192516/192935429-d1b95488-a075-48d5-8fd0-607d6070c651.png)
+
+![image](https://user-images.githubusercontent.com/43192516/192935451-f81ab112-a1dd-4486-b331-84395eecf4fc.png)
+
+8. 安装
+```
+docker run -it --rm -v /:/rootfs registry.cn-beijing.aliyuncs.com/quyc/rainbond-grctl:v3 copy && mv /usr/local/bin/rainbond-grctl /usr/local/bin/grctl && grctl install
+```
+
