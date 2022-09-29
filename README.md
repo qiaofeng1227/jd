@@ -53,8 +53,11 @@ kubectl get node
 
 ![image](https://user-images.githubusercontent.com/43192516/192935451-f81ab112-a1dd-4486-b331-84395eecf4fc.png)
 
-8. 安装
+8. 安装grctl命令
 ```
 docker run -it --rm -v /:/rootfs registry.cn-beijing.aliyuncs.com/quyc/rainbond-grctl:v3 copy && mv /usr/local/bin/rainbond-grctl /usr/local/bin/grctl && grctl install
 ```
-
+9. init service
+```
+grctl replace ip --ip=$public_ip --domain=$public_ip:7070 --token=<token值> --n=< 集群id> --s=true
+```
