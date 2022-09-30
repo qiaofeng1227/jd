@@ -16,7 +16,7 @@ apt-get install nfs-common  # ubuntu系统
 
 3. 运行控制台
 ```
-docker run -d -p 7070:7070 --name=rainbond-allinone --restart=always -v ~/.ssh:/root/.ssh -v ~/rainbonddata:/app/data registry.cn-beijing.aliyuncs.com/quyc/rainbond-allinone:v1.1
+docker run -d -p 7070:7070 --name=rainbond-allinone --restart=always -v ~/.ssh:/root/.ssh -v ~/rainbonddata:/app/data registry.cn-beijing.aliyuncs.com/quyc/rainbond-allinone:v1.2
 ```
 
 4. 安装k8s
@@ -55,7 +55,7 @@ kubectl get node
 
 8. 安装grctl命令
 ```
-docker run -it --rm -v /:/rootfs registry.cn-beijing.aliyuncs.com/quyc/rainbond-grctl:v3 copy && mv /usr/local/bin/rainbond-grctl /usr/local/bin/grctl && grctl install
+docker run -it --rm -v /:/rootfs registry.cn-beijing.aliyuncs.com/quyc/rainbond-grctl:v1.2 copy && mv /usr/local/bin/rainbond-grctl /usr/local/bin/grctl && grctl install
 ```
 9. init service
 ```
