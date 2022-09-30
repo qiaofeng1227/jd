@@ -22,10 +22,9 @@ docker run -d -p 7070:7070 --name=rainbond-allinone --restart=always -v ~/.ssh:/
 4. 安装k8s
 准备：
 ```
-1. ssh-keygen
-2. cat ~/.ssh/id_rsa.pub
-3. wget http://sh.rainbond.com/init_node && chmod +x init_node
-4. export SSH_RSA="步骤2内容" && ./init_node
+ssh-keygen
+wget http://sh.rainbond.com/init_node && chmod +x init_node
+export SSH_RSA=$(cat ~/.ssh/id_rsa.pub)  && ./init_node
 ```
 上传rke文件到 /usr/bin/rke 
 上传cluster.yml文件到 /root/cluster.yml
